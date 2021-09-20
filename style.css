@@ -1,0 +1,524 @@
+main {
+    font-family: 'Franklin Gothic Medium';
+    font-size: large;
+
+}
+header {
+    background-image: url("images/Layered-honey-cake-2.jpg\ monday\ cooking\ club.jpg");
+background-position: center;
+background-size: cover;
+height: 300px;
+}
+.logo {
+    width: 150px;
+    float: left;
+    margin-top: 10px;
+}
+/**Nav bar css*/
+ul {
+margin: 25px;
+list-style-type: none;
+float: right;
+}
+ li {
+    display: inline-block;
+}
+li a {
+color: rgb(24, 23, 23);
+border: 1px solid rgb(239, 242, 243);
+padding: 10px 40px;
+background-color: darkorange;
+}
+ul li a:hover {
+    background-color: rgb(236, 163, 26);
+    color: #000;
+    transition: 0,6s ease;
+}
+
+@media screen and (max-width: 500px;) {
+ul {
+flex-direction: column;
+  padding: 5px;
+  
+}
+}
+  
+
+/**About us*/
+.About_us_wrapper {
+  padding: 68px 0 80px;
+  background: url(images/small/pexels-trang-doan-1128678.jpg);
+  
+}
+.About_us_section {
+  
+  background: var(--main-gray-bg);
+}
+.About_us_section a {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--main-About-text-color);
+  align-items: center;
+}
+.About_us_img {
+  width: 250px;
+}
+.About_us_text {
+  width: calc(100% - 250px);
+  padding:  15px 20px 15px 43px;
+}
+.About_us_section .About_title {
+  margin-bottom: 14px;
+}
+.About_us_img img {
+  width: 100%;
+}
+.About_us_section:hover{
+  background: var(--main-charrey-color);
+}
+.About_us_section:hover .About_title:before, .About_us_section:hover .About_title:after {
+  background: var(--main-bg-color);
+}
+.About_us_section:hover a, .About_us_section:hover .About_title {
+  color: var(--main-bg-color);
+}
+.About_us_section, .About_us_section:hover, .About_us_section .vot_title, .About_us_section:hover .About_title, .About_us_section .About_title:before, .About_us_section .About_title:after, .About_us_section:hover .About_title:before, .About_us_section:hover .About_title:after {
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+videos {
+  display: inline-block;
+}
+/*summer coolers*/
+#video {
+  width: min-content;
+    margin: auto;
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+padding: 5px;
+background-color: #e76d09;
+border-radius: 10px;
+}
+
+/* background 7 minute video*/
+#tacos {
+    object-position: 0%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media screen and(max-width: 500px;){
+  #tacos {
+    
+  }
+}
+.content {
+  
+    bottom: 0;
+    width: 100%;
+    background-color: #e76d09;
+    color: aliceblue;
+    height: 200px;
+
+}
+
+/*Recipe book*/
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One|Sonsie+One|Montserrat");
+body {
+  background: #F46036;
+  color: white;
+}
+
+.recipe-title, h4, .index-view-item, .dialog-box {
+  font-family: Fugaz One;
+}
+
+.recipe-box-wrapper {
+  margin: 20px 15%;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Sonsie One;
+}
+.heading div, .heading i {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.unstyle-button, .dialog-box .corner-close, .dialog-box button, .recipe-view .recipe-title button, .add-button button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  color: #481D24;
+}
+.unstyle-button:hover, .dialog-box .corner-close:hover, .dialog-box button:hover, .recipe-view .recipe-title button:hover, .add-button button:hover {
+  color: #F46036;
+}
+
+#index-view {
+  height: 95px;
+  overflow: auto;
+  margin-bottom: 5px;
+  border: 5px solid #084C61;
+  border-bottom: 10px solid #084C61;
+  border-top: 10px solid #084C61;
+  border-radius: 10px;
+}
+#index-view .index-view-item {
+  padding: 7px;
+  cursor: pointer;
+}
+#index-view .index-view-item:nth-child(odd) {
+  background: #084C61;
+  color: #F46036;
+}
+#index-view .index-view-item:hover {
+  color: #481D24;
+}
+
+.active {
+  background: #084C61 !important;
+  border: 2px solid #084C61 !important;
+  color: #F46036 !important;
+}
+
+.add-button {
+  background: #084C61;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px;
+}
+.recipe-view .list {
+  max-width: 600px;
+}
+.recipe-view .recipe-body {
+  background: #481D24;
+  height: 330px;
+  overflow-y: scroll;
+  padding: 0 10px;
+  font-family: Montserrat;
+}
+.recipe-view .recipe-body h4 {
+  letter-spacing: 0.1em;
+}
+.recipe-view .recipe-title {
+  background: #084C61;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.recipe-view .recipe-title .title-row {
+  display: inline-block;
+}
+.recipe-view .recipe-title .fa-pencil-square-o {
+  vertical-align: bottom;
+}
+.recipe-view .recipe-title div:first-of-type {
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dialog-wrap {
+  box-shadow: 2px 10px 10px 5000px rgba(0, 0, 0, 0.6) !important;
+}
+
+.dialog-box {
+  text-align: center;
+  position: fixed;
+  width: 500px;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -200px;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 15px;
+  background: #616196;
+  z-index: 1000;
+}
+.dialog-box .input-title {
+  margin: 5px;
+}
+.dialog-box textarea {
+  margin-bottom: 10px;
+  background: #556670;
+  min-width: 300px;
+  min-height: 60px;
+  resize: vertical;
+  color: #042732;
+  font-weight: bold;
+  font-size: 13px;
+  overflow: auto;
+}
+.dialog-box textarea:focus {
+  box-shadow: 0 0 5px #F46036;
+  outline: 1px solid #F46036;
+  border: 1px solid #F46036;
+}
+.dialog-box textarea:nth-of-type(3) {
+  min-height: 100px;
+}
+.dialog-box textarea:first-of-type {
+  resize: none;
+  min-height: 15px !important;
+}
+.dialog-box button:not(:first-of-type) {
+  margin-bottom: 15px;
+}
+.dialog-box button {
+  font-family: Fugaz One;
+  font-size: 15px;
+  margin-right: 8px;
+  background: #063a49;
+  border-radius: 5px;
+}
+.dialog-box .corner-close {
+  font-size: 24px !important;
+  color: #042732;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .recipe-box-wrapper {
+    margin: 5%;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .dialog-box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .recipe-box-wrapper {
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .recipe-body {
+    max-height: 200px;
+  }
+}
+
+/**call to action css**/
+.sal_openTime_wrapper {
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+}
+.sal_contant_info_section {
+  position: relative;
+}
+.sal_contant_info_section > img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 430px;
+}
+.sal_info_icon svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--main-brown-version2);
+}
+.sal_contant_info li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+.sal_contant_info li:last-child {
+  margin-bottom: 0;
+}
+.sal_info_icon {
+  width: 50px;
+  margin-top: 8px;
+}
+.sal_info_text {
+  width: calc(100% - 50px);
+}
+.sal_contant_info_section.sal_info_center {
+  padding: 73px 15px 82px;
+  background: url(../images/index9/callNow_bg.png);
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sal_contant_info {
+  margin: auto;
+  width: 75%;
+}
+.sal_info_num {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.sal_contant_info_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  text-align: center;
+  background: var(--main-black7);
+}
+.sal_contant_info_title h4 {
+  color: var(--main-bg-color);
+  font-size: 36px;
+  font-weight: 700;
+  padding: 13px 0 18px;
+}
+.sal_contant_info_hover img {
+  object-fit: unset;
+  width: auto;
+}
+.sal_contant_info_hover {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  bottom: 30px;
+  right: 30px;
+  margin: auto;
+  background: var(--main-black7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.sal_contant_info_hover h4 {
+  color: var(--main-bg-color);
+  font-size: 36px;
+  font-weight: 700;
+}
+.sal_service_info {
+  width: 100%;
+  display: inline-block;
+}
+.sal_service_info img {
+  margin: 24px 0 20px;
+  max-height: 50px;
+}
+.sal_contant_info_section:hover .sal_contant_info_title {
+  visibility: hidden;
+  opacity: 0;
+}
+.sal_contant_info_section:hover .sal_contant_info_hover {
+  visibility: visible;
+  opacity: 1;
+}
+.sal_contant_info_section, .sal_contant_info_section:hover, .sal_contant_info_title, .sal_contant_info_hover {
+  -webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+.sal_service_wrapper .sal_heading_wrapper {
+  margin-bottom: 43px;
+}
+
+********************************************************
+   /* 9. Price CSS Start*/
+********************************************************/
+.sal_price_wrapper {
+    background: var(--main-bg-color);
+    padding: 69px 0 39px;
+    font-family: 'Playfair Display', serif;
+}
+.sal_pricing_section {
+    border: 10px solid var(--main-gray-version33);
+    padding: 40px 40px 33px;
+    background: var(--main-bg-color);
+    margin: 2px 0 30px 0;
+}
+.sal_pricing_title h4 {
+    color: var(--main-link-color);
+    font-size: 22px;
+    padding-right: 100px;
+    margin-bottom: 5px;
+}
+.sal_pricing_title .sal_price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    color: var(--main-link-color);
+    font-size: 22px;
+}
+.sal_pricing_list {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px dotted var(--main-brown-version2);
+    margin-bottom: 24px;
+    padding-bottom: 23px;
+}
+.sal_pricing_list:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.sal_primium_section .sal_pricing_section {
+    color: var(--main-bg-color);
+    border: none;
+    background: url(../images/index9/price_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-right: -20px;
+    margin-left: -20px;
+    z-index: 1;
+}
+.sal_price_wrapper .container-fluid .row {
+    align-items: center;
+}
+.sal_primium_section .sal_pricing_section .sal_pricing_list {
+    border-bottom-color: var(--main-bg-color);
+}
+.sal_primium_section .sal_pricing_section .sal_pricing_list h4, .sal_primium_section .sal_pricing_title .sal_price, .sal_primium_section .sal_heading_wrapper h2 {
+    color: var(--main-bg-color);
+}
+.sal_primium_section .sal_heading_wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px;
+}
